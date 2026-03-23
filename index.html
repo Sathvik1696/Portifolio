@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik Neelisetty — Data-Driven Backend Developer</title>
+    
+    <!-- Modern Sans-serif Font: Plus Jakarta Sans for the Deen Dayal look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-top-right"></div>
+    <div class="ambient-glow glow-bottom-left"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="dd-nav">
+        <div class="nav-container">
+            <!-- Left: Profile Info -->
+            <div class="nav-brand">
+                <div class="nav-avatar">SN</div>
+                <span class="nav-name">Sathwik Neelisetty</span>
+            </div>
+
+            <!-- Center: Links -->
+            <ul class="nav-links desktop-only">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#demo">Live Demo</a></li>
+            </ul>
+
+            <!-- Right: Resume CTA -->
+            <div class="nav-actions" style="display: flex; gap: 16px; align-items: center;">
+                <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Theme" style="font-size: 1.25rem; color: var(--text-secondary); padding: 8px;">
+                    <i class="ti ti-sun" id="themeIcon"></i>
+                </button>
+                <a href="Sathwik_CV_v5 (1).docx" class="btn-resume" target="_blank" download>Resume</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="ti ti-menu-2"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <ul class="mobile-nav-links" id="mobileNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#demo">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="page-content">
+
+        <!-- ==== HERO SECTION ==== -->
+        <section id="home" class="hero-section">
+            <div class="hero-grid">
+                
+                <!-- Left: Big Headline -->
+                <div class="hero-headline reveal-up">
+                    <h1>I Craft <span class="text-highlight">Data APIS</span><br>& Backend Experiences</h1>
+                    <div class="hero-metadata">
+                        <span class="meta-item">BACKEND DEVELOPER</span>
+                        <span class="meta-item">DATA SCIENCE FOCUS</span>
+                        <span class="meta-item">&copy;2026</span>
+                    </div>
+                </div>
+
+                <!-- Center: Aesthetic Portrait/Abstract -->
+                <div class="hero-center-art reveal-up" style="transition-delay: 0.1s;">
+                    <!-- Placeholder abstract SVG representing data/code (Deen Dayal style uses a dark B&W portrait, we'll use a sophisticated abstract graphic or portrait placeholder) -->
+                    <div class="hero-image-wrapper deen-hover-glow" style="--hover-glow: rgba(167, 139, 250, 0.4);">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600&h=800" alt="Tech Abstract" class="hero-image" />
+                        <div class="scroll-indicator">
+                            SCROLL <i class="ti ti-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Short Bio -->
+                <div class="hero-bio reveal-up" style="transition-delay: 0.2s;">
+                    <p>With experience in building robust RESTful services, caching layers, and actionable data analytics. Fluent in Python, Django, PostgreSQL, and Power BI.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- A subtle horizontal grid line -->
+        <div class="grid-line horizontal"></div>
+
+        <!-- ==== WORK / PROJECTS SECTION ==== -->
+        <section id="work" class="work-section">
+            <div class="section-container">
+                
+                <!-- Project 1: Multi-Service API -->
+                <div class="deen-case-card reveal-up" style="--card-glow: rgba(49, 46, 129, 0.4); --hover-glow: rgba(67, 56, 202, 0.6);">
+                    <div class="case-header">
+                        <div class="case-title-block">
+                            <h3>Multi-Service Data API</h3>
+                            <span>Production Environment | Django REST Framework</span>
+                        </div>
+                        <a href="https://github.com/Sathvik1696" class="case-arrow" target="_blank" title="View Source">
+                            <i class="ti ti-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="case-visual">
+                        <div class="browser-mockup">
+                            <div class="browser-chrome">
+                                <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                <div class="url-bar"><i class="ti ti-lock"></i> api.sathwik.dev/multi-service</div>
+                            </div>
+                            <div class="mockup-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200&h=600" alt="API Architecture Mockup">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-readme">
+                        <div class="readme-content">
+                            <h4><i class="ti ti-brand-github"></i> README.md</h4>
+                            <div class="readme-body">
+                                <p><strong>Overview:</strong> A highly scalable modular backend API acting as an aggregation layer for multiple external services. Designed for low latency tracking and real-time frontend consumption.</p>
+                                <ul>
+                                    <li><strong>Tech Stack:</strong> Python, Django DRF, PostgreSQL, Redis, Celery.</li>
+                                    <li><strong>Key Features:</strong> Asynchronous task queues, robust JWT authentication, rate limiting, and centralized error handling logic.</li>
+                                    <li><strong>Architecture:</strong> Service-oriented pattern with strict decoupled serializers.</li>
+                                </ul>
+                                <pre><code>GET /api/v1/weather/?city=Nellore
+200 OK
+{
+  "temp": 28,
+  "humidity": 65,
+  "cached": true
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Global Sales Tracker -->
+                <div class="deen-case-card reveal-up" style="--card-glow: rgba(6, 78, 59, 0.4); --hover-glow: rgba(5, 150, 105, 0.6);">
+                    <div class="case-header">
+                        <div class="case-title-block">
+                            <h3>Global Sales Tracker</h3>
+                            <span>Data Analytics | Power BI, SQL</span>
+                        </div>
+                        <a href="https://github.com/Sathvik1696/Melbourne-Housing-Power-BI-Dashboard" class="case-arrow" target="_blank" title="View Source">
+                            <i class="ti ti-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="case-visual">
+                        <div class="browser-mockup">
+                            <div class="browser-chrome">
+                                <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                <div class="url-bar"><i class="ti ti-lock"></i> analytics.sathwik.dev/sales</div>
+                            </div>
+                            <div class="mockup-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200&h=600" alt="Power BI Dashboard Mockup">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-readme">
+                        <div class="readme-content">
+                            <h4><i class="ti ti-brand-github"></i> README.md</h4>
+                            <div class="readme-body">
+                                <p><strong>Overview:</strong> An interactive, end-to-end data visualization dashboard analyzing global housing and sales datasets to uncover actionable business metrics.</p>
+                                <ul>
+                                    <li><strong>Tech Stack:</strong> Power BI, SQL, Python (Pandas) for preprocessing.</li>
+                                    <li><strong>Data Pipeline:</strong> Extracted raw unstructured sales data, cleaned via Python pipelines, and loaded into relational SQL structures for optimized querying.</li>
+                                    <li><strong>Impact:</strong> Enabled stakeholders to identify regional revenue trends efficiently using dynamic slicing and DAX measures.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: OLMS -->
+                <div class="deen-case-card reveal-up" style="--card-glow: rgba(131, 24, 67, 0.4); --hover-glow: rgba(190, 24, 93, 0.6);">
+                    <div class="case-header">
+                        <div class="case-title-block">
+                            <h3>OLMS</h3>
+                            <span>Online Learning Management System</span>
+                        </div>
+                        <a href="https://github.com/Sathvik1696/OLMS-Online-Learning-Management-System" class="case-arrow" target="_blank" title="View Source">
+                            <i class="ti ti-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="case-visual">
+                        <div class="browser-mockup">
+                            <div class="browser-chrome">
+                                <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                <div class="url-bar"><i class="ti ti-lock"></i> portal.sathwik.dev/olms</div>
+                            </div>
+                            <div class="mockup-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200&h=600" alt="OLMS Platform Mockup">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-readme">
+                        <div class="readme-content">
+                            <h4><i class="ti ti-brand-github"></i> README.md</h4>
+                            <div class="readme-body">
+                                <p><strong>Overview:</strong> A comprehensive backend infrastructure supporting an online learning platform. Handles course enrollments, video module streaming permissions, and student reviews.</p>
+                                <ul>
+                                    <li><strong>Tech Stack:</strong> Python, Django, REST APIs.</li>
+                                    <li><strong>Features:</strong> Role-based access control (RBAC) ensuring course instructors and students have segregated operational boundaries.</li>
+                                    <li><strong>Design:</strong> Modular database schema tracking user progression, lecture completion states, and transaction histories.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="grid-line horizontal"></div>
+
+        <!-- ==== EDUCATION & CERTIFICATIONS ==== -->
+        <section id="education" class="edu-section">
+            <div class="section-container">
+                <div class="edu-grid">
+                    <!-- Education Column -->
+                    <div class="edu-col reveal-up">
+                        <div class="section-header">
+                            <span class="subtitle">ACADEMIC JOURNEY</span>
+                            <h2>Education.</h2>
+                        </div>
+                        <div class="edu-list">
+                            <div class="edu-item deen-hover-glow">
+                                <div class="edu-year">2023 — 2027</div>
+                                <h3>Lovely Professional University</h3>
+                                <p class="edu-degree">B.Tech in Computer Science and Engineering</p>
+                                <div class="edu-meta">CGPA: 6.8</div>
+                            </div>
+                            <div class="edu-item deen-hover-glow">
+                                <div class="edu-year">2021 — 2023</div>
+                                <h3>Kendriya Vidyalaya Nellore</h3>
+                                <p class="edu-degree">12th Science (CBSE)</p>
+                                <div class="edu-meta">Score: 76.8% | 10th: 82.6%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="cert-col reveal-up">
+                        <div class="section-header">
+                            <span class="subtitle">VERIFIED SKILLS</span>
+                            <h2>Certifications.</h2>
+                        </div>
+                        <div class="cert-list">
+                            <a href="#" class="cert-item deen-hover-glow" target="_blank">
+                                <div class="cert-icon"><i class="ti ti-certificate"></i></div>
+                                <div class="cert-info">
+                                    <h4>OCI Generative AI Professional</h4>
+                                    <span>Oracle Cloud Infrastructure • Oct 2025</span>
+                                </div>
+                                <i class="ti ti-external-link cert-link-icon"></i>
+                            </a>
+                            <a href="#" class="cert-item deen-hover-glow" target="_blank">
+                                <div class="cert-icon"><i class="ti ti-certificate"></i></div>
+                                <div class="cert-info">
+                                    <h4>Computational Theory</h4>
+                                    <span>Coursera / Infosys Springboard • Sep 2025</span>
+                                </div>
+                                <i class="ti ti-external-link cert-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid-line horizontal"></div>
+
+        <!-- ==== SKILLS / PROFICIENCIES SECTION ==== -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">EXPERTISE</span>
+                    <h2>Proficiencies.</h2>
+                </div>
+
+                <div class="skills-bento">
+                    
+                    <div class="skill-box reveal-up deen-hover-glow" style="--hover-glow: rgba(59, 130, 246, 0.5);">
+                        <i class="ti ti-code skill-icon"></i>
+                        <h3>Backend</h3>
+                        <p>Django, FastAPI, REST APIs, Redis, JWT</p>
+                    </div>
+
+                    <div class="skill-box reveal-up deen-hover-glow" style="transition-delay: 0.1s; --hover-glow: rgba(168, 85, 247, 0.5);">
+                        <i class="ti ti-database skill-icon"></i>
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MySQL, SQLite</p>
+                    </div>
+
+                    <div class="skill-box reveal-up deen-hover-glow" style="transition-delay: 0.2s; --hover-glow: rgba(16, 185, 129, 0.5);">
+                        <i class="ti ti-chart-bar skill-icon"></i>
+                        <h3>Data Science</h3>
+                        <p>Pandas, NumPy, Scikit-learn, Power BI</p>
+                    </div>
+
+                    <div class="skill-box reveal-up deen-hover-glow" style="transition-delay: 0.3s; --hover-glow: rgba(245, 158, 11, 0.5);">
+                        <i class="ti ti-server skill-icon"></i>
+                        <h3>Tools & Cloud</h3>
+                        <p>Git, Docker basics, Postman</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== LIVE DEMO (API SANDBOX) ==== -->
+        <div class="grid-line horizontal"></div>
+
+        <section id="demo" class="demo-section">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">INTERACTIVE</span>
+                    <h2>Live API Sandbox</h2>
+                    <p class="header-desc">Test real-time data fetching capabilities bridging backend and frontend.</p>
+                </div>
+
+                <div class="demo-bento reveal-up">
+                    <div class="demo-display browser-mockup deen-hover-glow" style="--hover-glow: rgba(236, 72, 153, 0.4);">
+                        <div class="browser-chrome">
+                            <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <div class="url-bar"><i class="ti ti-terminal"></i> terminal / sandbox</div>
+                        </div>
+                        <div id="apiResponseArea" class="api-output-area">
+                            <!-- Default empty state -->
+                            <div class="demo-empty">
+                                <i class="ti ti-api app-icon"></i>
+                                <p>Select an endpoint to execute a live request.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-controls">
+                        <div class="control-group deen-hover-glow" style="--hover-glow: rgba(59, 130, 246, 0.4);">
+                            <h4>Weather API</h4>
+                            <p>Fetch real-time metrics for Nellore.</p>
+                            <button id="fetchWeather" class="btn-api"><span>GET</span> /weather/nellore <i class="ti ti-player-play"></i></button>
+                        </div>
+                        <div class="control-group deen-hover-glow" style="--hover-glow: rgba(16, 185, 129, 0.4);">
+                            <h4>GitHub API</h4>
+                            <p>Fetch live repository statistics.</p>
+                            <button id="fetchGithub" class="btn-api"><span>GET</span> /users/Sathvik1696 <i class="ti ti-player-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== FOOTER / CONTACT ==== -->
+        <footer class="dd-footer">
+            <div class="section-container">
+                <div class="footer-cta reveal-up">
+                    <h2 style="margin-bottom: 20px;">Ready to build something?</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.2rem;">Send a message to discuss your next data or backend project.</p>
+                    
+                    <form action="https://formspree.io/f/your_formspree_id_here" method="POST" class="contact-form deen-hover-glow" style="--hover-glow: rgba(167, 139, 250, 0.1);">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Project Details / Query" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary-large">
+                            Send Message <i class="ti ti-send"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-info">
+                        <span class="nav-avatar sm">SN</span>
+                        <span>Sathwik Neelisetty</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/sathwik-neelisetty/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Sathvik1696" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Modal for Project Details -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop" id="modalCloseBackdrop"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalCloseBtn"><i class="ti ti-x"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
